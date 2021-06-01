@@ -4,7 +4,8 @@ pipeline{
         stage('Build'){
             agent any
             options{
-                skipDefaultCheckout()
+                timestamps()
+                /*skipDefaultCheckout()*/
             }
             steps{
                 echo "clouddevops"
